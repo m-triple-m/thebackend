@@ -7,7 +7,7 @@ const todoRouter = require('./api/routers/todoRouter');
 const userRouter = require('./api/routers/userRouter');
 
 const app = express();
-const port = api_config.port;
+const port = process.env.PORT || api_config.port;
 
 
 app.use(express.json());
